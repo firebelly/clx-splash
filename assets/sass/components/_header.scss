@@ -1,0 +1,65 @@
+// Header
+
+.bg-x {
+	fill: none;
+	stroke: $white;
+	position: absolute;
+	top: 100px;
+	left: 0;
+	z-index: -1;
+	width: 1500px;
+	@include media-md {
+		width: 106%;
+		height: auto;
+	}
+}
+
+.icon-logo {
+	fill: $black;
+	position: absolute;
+	top: 30px;
+	left: 0;
+	width: 245px;
+
+	@include media-md {
+		top: 60px;
+		left: 160px;
+	}
+}
+
+.icon-C,
+.icon-L,
+.icon-X {
+	display: none;
+}
+
+@include media-md {
+	.icon-C,
+	.icon-L,
+	.icon-X {
+		display: block;
+		position: fixed;
+		height: auto;
+	}
+	.icon-C {
+		width: 90px;
+		top: 140px;
+		left: 40px;
+	}
+	.icon-L {
+		width: 50px;
+		right: 4%;
+		top: 120px;
+	}
+	.icon-X {
+		width: 80px;
+		bottom: 80px;
+		right: 4%;
+		fill: $red;
+	}
+}
+
+.site-header {
+	position: relative;
+	height: grid(16);
+}
