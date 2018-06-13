@@ -7,12 +7,14 @@
   RedirectMatch 404 /\.git
 
   # Ensure consistent www URL
+  RewriteCond %{REQUEST_URI} !\.well-known/acme-challenge
   RewriteCond %{HTTP_HOST} !^chicagolx\.org [NC]
   RewriteCond %{HTTP_HOST} !^clx-splash\.localhost [NC]
   RewriteCond %{HTTP_HOST} !^chicagolx\.webfactional\.com [NC]
   RewriteRule ^(.*)$ http://chicagolx.org/$1 [R=301,L]
 
   # Force SSL
+  # RewriteCond %{REQUEST_URI} !\.well-known/acme-challenge
   # RewriteCond %{HTTP:X-Forwarded-SSL} !on
   # RewriteCond %{HTTP_HOST} !^clx-splash\.localhost [NC]
   # RewriteCond %{HTTP_HOST} !^chicagolx\.webfactional\.com [NC]
