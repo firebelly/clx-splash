@@ -1,9 +1,38 @@
 // Typography
 
+@font-face {
+  font-family: 'gt-sectra-regular';
+  src: url('/assets/fonts/gt-sectra-regular-webfont.woff2') format('woff2'),
+       url('/assets/fonts/gt-sectra-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'gt-sectra-regular';
+  src: url('/assets/fonts/gt-sectra-regular-italic-webfont.woff2') format('woff2'),
+       url('/assets/fonts/gt-sectra-regular-italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'gt-sectra-regular';
+  src: url('/assets/fonts/gt-sectra-bold-webfont.woff2') format('woff2'),
+       url('/assets/fonts/gt-sectra-bold-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'gt-sectra-regular';
+  src: url('/assets/fonts/gt-sectra-bold-italic-webfont.woff2') format('woff2'),
+       url('/assets/fonts/gt-sectra-bold-italic-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+
 // Fonts
 $font-display: 'Space Mono', monospace;
-$font-header: 'Merriweather', serif;
-$font-regular: 'Merriweather', serif;
+$font-header: 'gt-sectra-regular', serif;
+$font-regular: 'gt-sectra-regular', serif;
 
 h1,h2,h3,h4 {
   @extend %smooth;

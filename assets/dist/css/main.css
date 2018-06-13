@@ -179,35 +179,59 @@ h1, h2, h3, h4 {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+@font-face {
+  font-family: 'gt-sectra-regular';
+  src: url("/assets/fonts/gt-sectra-regular-webfont.woff2") format("woff2"), url("/assets/fonts/gt-sectra-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'gt-sectra-regular';
+  src: url("/assets/fonts/gt-sectra-regular-italic-webfont.woff2") format("woff2"), url("/assets/fonts/gt-sectra-regular-italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'gt-sectra-regular';
+  src: url("/assets/fonts/gt-sectra-bold-webfont.woff2") format("woff2"), url("/assets/fonts/gt-sectra-bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'gt-sectra-regular';
+  src: url("/assets/fonts/gt-sectra-bold-italic-webfont.woff2") format("woff2"), url("/assets/fonts/gt-sectra-bold-italic-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: italic; }
+
 ul,
 ol,
 p {
-  font: 18px/1.38889 "Merriweather", serif; }
+  font: 18px/1.38889 "gt-sectra-regular", serif; }
 
 h1,
 .h1 {
-  font: 35px/1.2 "Merriweather", serif;
+  font: 35px/1.2 "gt-sectra-regular", serif;
   margin: 0 0 grid(2); }
   @media screen and (min-width: 768px) {
     h1,
     .h1 {
-      font: 70px/1.14286 "Merriweather", serif; } }
+      font: 70px/1.14286 "gt-sectra-regular", serif; } }
 
 h2,
 .h2 {
-  font: 25px/1.4 "Merriweather", serif; }
+  font: 25px/1.4 "gt-sectra-regular", serif; }
   @media screen and (min-width: 768px) {
     h2,
     .h2 {
-      font: 40px/1.25 "Merriweather", serif; } }
+      font: 40px/1.25 "gt-sectra-regular", serif; } }
 
 h3,
 .h3 {
-  font: 21px/1.47619 "Merriweather", serif; }
+  font: 21px/1.47619 "gt-sectra-regular", serif; }
   @media screen and (min-width: 768px) {
     h3,
     .h3 {
-      font: 30px/1.5 "Merriweather", serif; } }
+      font: 30px/1.5 "gt-sectra-regular", serif; } }
 
 h4,
 .h4 {
@@ -304,7 +328,7 @@ body {
 
 body {
   color: #241f21;
-  font: 12px/1.5 "Merriweather", serif;
+  font: 12px/1.5 "gt-sectra-regular", serif;
   background: #f5f2ed;
   padding: 40px;
   position: relative; }
