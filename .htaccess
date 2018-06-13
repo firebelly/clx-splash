@@ -1,0 +1,21 @@
+# START Custom redirects, SSL
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # No git
+  RedirectMatch 404 /\.git
+
+  # Ensure consistent www URL
+  RewriteCond %{HTTP_HOST} !^chicagolx\.org [NC]
+  RewriteCond %{HTTP_HOST} !^clx-splash\.localhost [NC]
+  RewriteCond %{HTTP_HOST} !^chicagolx\.webfactional\.com [NC]
+  RewriteRule ^(.*)$ http://chicagolx.org/$1 [R=301,L]
+
+  # Force SSL
+  # RewriteCond %{HTTP:X-Forwarded-SSL} !on
+  # RewriteCond %{HTTP_HOST} !^clx-splash\.localhost [NC]
+  # RewriteCond %{HTTP_HOST} !^chicagolx\.webfactional\.com [NC]
+  # RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+</IfModule>
+# END Custom redirects, SSL
