@@ -1,0 +1,21 @@
+{
+  "name": "clx",
+  "homepage": "https://github.com/firebelly/clx-splash",
+  "authors": [
+    "Nate Beaty <nate@firebellydesign.com>"
+  ],
+  "description": "clx splash",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}
