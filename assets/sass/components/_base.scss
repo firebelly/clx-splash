@@ -6,13 +6,17 @@
 html {
   box-sizing: border-box;
 }
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
 body {
   color: $black;
   font: 18px/1.388888889 $font-regular;
   background: $gray1;
   padding: $global-padding;
   position: relative;
-  overflow-x: hidden;
 }
 
 // Default link styles

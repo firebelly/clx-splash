@@ -1,5 +1,10 @@
 // Header
 
+.site-header {
+	position: relative;
+	height: grid(10);
+}
+
 .bg-x {
 	fill: none;
 	stroke: $white;
@@ -56,9 +61,4 @@
 		right: 4%;
 		fill: $red;
 	}
-}
-
-.site-header {
-	position: relative;
-	height: grid(10);
 }

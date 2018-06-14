@@ -319,13 +319,17 @@ h4,
 html {
   box-sizing: border-box; }
 
+html,
+body {
+  width: 100%;
+  overflow-x: hidden; }
+
 body {
   color: #241f21;
   font: 18px/1.38889 "gt-sectra-regular", serif;
   background: #f5f2ed;
   padding: 40px;
-  position: relative;
-  overflow-x: hidden; }
+  position: relative; }
 
 a {
   color: #241f21;
@@ -365,6 +369,10 @@ address {
     .alert {
       padding: 24px;
       margin-left: 33.33333%; } }
+
+.site-header {
+  position: relative;
+  height: 80px; }
 
 .bg-x {
   fill: none;
@@ -414,10 +422,6 @@ address {
     bottom: 80px;
     right: 4%;
     fill: #ff6e5c; } }
-
-.site-header {
-  position: relative;
-  height: 80px; }
 
 form fieldset {
   border: none;
@@ -519,7 +523,7 @@ form.success .status {
   font-weight: bold;
   text-transform: uppercase;
   color: #ff6e5c;
-  margin: 16px 0 32px; }
+  margin: 48px 0 32px; }
 
 @media screen and (min-width: 768px) {
   .splash .site-main {
