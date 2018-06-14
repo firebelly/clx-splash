@@ -370,7 +370,7 @@ address {
   fill: none;
   stroke: #fff;
   position: absolute;
-  top: 100px;
+  top: 64px;
   left: 0;
   z-index: -1;
   width: 1500px; }
@@ -382,12 +382,11 @@ address {
 .icon-logo {
   fill: #241f21;
   position: absolute;
-  top: 30px;
+  bottom: 0;
   left: 0;
   width: 245px; }
   @media screen and (min-width: 768px) {
     .icon-logo {
-      top: 60px;
       left: 160px; } }
 
 .icon-C,
@@ -404,12 +403,12 @@ address {
     height: auto; }
   .icon-C {
     width: 90px;
-    top: 140px;
+    top: 100px;
     left: 40px; }
   .icon-L {
     width: 50px;
     right: 4%;
-    top: 120px; }
+    top: 80px; }
   .icon-X {
     width: 80px;
     bottom: 80px;
@@ -418,7 +417,7 @@ address {
 
 .site-header {
   position: relative;
-  height: 128px; }
+  height: 80px; }
 
 form fieldset {
   border: none;
@@ -527,4 +526,4 @@ form.success .status {
     width: 50%;
     margin: 0 auto; }
     .splash .site-main h4.header {
-      margin: 144px 0 64px; } }
+      margin: 80px 0 16px; } }
