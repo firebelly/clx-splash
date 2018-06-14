@@ -48,6 +48,7 @@ gulp.task('styles', function() {
     }))
     .pipe(autoprefixer())
     .pipe(gulpif(isProduction, cssnano()))
+    .pipe(rename({suffix: '-1528998866'}))
     .pipe(gulp.dest('assets/dist/css'))
     .pipe(browserSync.stream());
     // .pipe(notify({message: 'Styles smashed.', onLast: true}));
