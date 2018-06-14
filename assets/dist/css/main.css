@@ -317,21 +317,15 @@ h4,
   box-sizing: inherit; }
 
 html {
-  height: 100%;
   box-sizing: border-box; }
-
-html,
-body {
-  width: 100%;
-  min-height: 100%;
-  overflow-x: hidden; }
 
 body {
   color: #241f21;
-  font: 12px/1.5 "gt-sectra-regular", serif;
+  font: 18px/1.38889 "gt-sectra-regular", serif;
   background: #f5f2ed;
   padding: 40px;
-  position: relative; }
+  position: relative;
+  overflow-x: hidden; }
 
 a {
   color: #241f21;
