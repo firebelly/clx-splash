@@ -10,14 +10,12 @@
   RewriteCond %{REQUEST_URI} !\.well-known/acme-challenge
   RewriteCond %{HTTP_HOST} !^chicagolx\.org [NC]
   RewriteCond %{HTTP_HOST} !^clx-splash\.localhost [NC]
-  RewriteCond %{HTTP_HOST} !^chicagolx\.webfactional\.com [NC]
-  RewriteRule ^(.*)$ http://chicagolx.org/$1 [R=301,L]
+  RewriteRule ^(.*)$ https://chicagolx.org/$1 [R=301,L]
 
   # Force SSL
   RewriteCond %{REQUEST_URI} !\.well-known/acme-challenge
   RewriteCond %{HTTP:X-Forwarded-SSL} !on
   RewriteCond %{HTTP_HOST} !^clx-splash\.localhost [NC]
-  RewriteCond %{HTTP_HOST} !^chicagolx\.webfactional\.com [NC]
   RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 </IfModule>
 # END Custom redirects, SSL
