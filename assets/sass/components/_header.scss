@@ -13,6 +13,7 @@
 	left: 0;
 	z-index: -1;
 	width: 1500px;
+	pointer-events: none;
 	@include media-md {
 		width: 106%;
 		height: auto;
